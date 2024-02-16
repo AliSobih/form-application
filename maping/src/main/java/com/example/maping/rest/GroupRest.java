@@ -17,10 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class GroupRest {
     private final GroupServiceImp groupService;
 
-    @PostMapping("/decision")
-    public void makeDecision(@RequestBody ReviewRequest request) {
-        groupService.makeDecision(request);
-    }
     @PostMapping
     public void AddGroup(AddGroup group) {
         Group group1 = new Group(group.email, DepartmentRole.valueOf(group.role.trim()));
