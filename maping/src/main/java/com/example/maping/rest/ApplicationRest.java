@@ -17,19 +17,19 @@ public class ApplicationRest {
     private final ApplicationServiceImp applicationService;
 
     @PostMapping
-    public ResponseEntity<Void> saveApplication(@RequestBody ApplicationRequest applicationRequest) {
-        applicationService.saveApplication(applicationRequest);
+    public ResponseEntity<Void> saveApplication(@RequestBody Application application) {
+        applicationService.save(application);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
     @GetMapping
     public List<Application> findAllApplications() {
-        return applicationService.findAllApplications();
+        return applicationService.findAll();
     }
 
     @GetMapping("/{id}")
     public Application showAllApplications(@PathVariable Long id) {
-        return applicationService.findApplicationById(id);
+        return applicationService.findById(id);
 
     }
 }
