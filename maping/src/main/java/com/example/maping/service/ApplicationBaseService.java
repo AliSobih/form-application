@@ -15,10 +15,10 @@ import java.util.List;
 @RequiredArgsConstructor
 public abstract class ApplicationBaseService<T extends Application> implements ApplicationService<T> {
     private final ReviewRepo reviewRepo;
+    private final List<DepartmentRole> roles;
 
     @Override
     public void save(T application) {
-        List<DepartmentRole> roles = EnumSet.allOf(DepartmentRole.class).stream().toList();
         List<Review> reviews = new ArrayList<>();
         for (DepartmentRole role : roles) {
             Review review = new Review(
