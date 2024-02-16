@@ -1,13 +1,11 @@
 package com.example.maping.rest;
 
 import com.example.maping.dto.AddGroup;
-import com.example.maping.dto.ReviewRequest;
 import com.example.maping.entity.Group;
 import com.example.maping.enumPackage.DepartmentRole;
 import com.example.maping.service.GroupServiceImp;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

@@ -1,6 +1,5 @@
 package com.example.maping.rest;
 
-import com.example.maping.dto.ApplicationRequest;
 import com.example.maping.entity.Application;
 import com.example.maping.service.ApplicationServiceImp;
 import lombok.RequiredArgsConstructor;
