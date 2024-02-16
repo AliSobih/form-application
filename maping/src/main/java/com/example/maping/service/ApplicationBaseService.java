@@ -3,7 +3,6 @@ package com.example.maping.service;
 import com.example.maping.entity.Application;
 import com.example.maping.entity.Review;
 import com.example.maping.enumPackage.DepartmentRole;
-import com.example.maping.repository.JobApplicationRepo;
 import com.example.maping.repository.ReviewRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
