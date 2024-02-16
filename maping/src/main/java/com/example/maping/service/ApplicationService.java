@@ -8,5 +8,9 @@ public interface ApplicationService<T extends Application> {
     void save(T request);
 
     List<T> findAll();
+
+
+
+
     T findById(Long id) throws Exception;
 }
