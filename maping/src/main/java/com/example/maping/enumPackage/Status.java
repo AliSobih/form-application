@@ -1,7 +1,7 @@
 package com.example.maping.enumPackage;
 
 public enum Status {
-    REJECT,
-    ACCEPT,
+    REJECTED,
+    ACCEPTED,
     IN_PROCESS
 }
